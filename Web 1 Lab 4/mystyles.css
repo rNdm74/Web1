@@ -1,0 +1,37 @@
+div.background
+  {
+  width:200px;
+  height:300px;
+  
+  margin-top:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;  
+  background:url(29.jpg);
+  border:2px solid black;
+  }
+div.container
+  {
+  width:800px;
+  height:360px;
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;
+  background:url(29.png);
+  opacity:1;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+  }
+div.link
+  {
+  /*border:1px solid black;*/
+  width:150px;
+  height:100px;
+  margin-top:30px;
+  }
+  
+div.link.p
+  {
+  margin:30px;
+  }
+  

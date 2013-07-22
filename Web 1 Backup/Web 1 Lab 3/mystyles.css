@@ -1,0 +1,39 @@
+#para1
+{
+font-size:20px;
+text-align:center;
+color:red;
+}
+
+.center
+{
+text-align:center;
+color:black;
+/*font-family:"Times New Roman", Times, red-serifs;*/
+}
+
+p.main
+{
+margin-left:110px;"
+/*text-align:center;*/
+color:blue;
+/*font-family:"Tahoma", Geneva, sans-serif;*/
+}
+
+p
+{
+font-size:20px;
+color:green;
+/*font-family:"Tahoma", Geneva, sans-serif;*/
+}
+
+.style
+{
+background-image:url('28.jpg');
+font-family:"Tahoma", Geneva, sans-serif;
+}
+
+table,th,td
+{
+border: 1px solid black;
+}

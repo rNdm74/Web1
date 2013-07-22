@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>  
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
+ 
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".active").hover(function(){
+    $(".contactusimage").slideDown("normal");  
+	return false;   
+  });
+});
+ 
+$(document).ready(function(){
+$(".contactusimage").click(function(){
+    $(".contactusimage").slideUp("normal"); 
+	return false;    
+  });
+});
+
+$(document).ready(function(){
+$(".flip").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+  });    
+});
+
+function buttonclick(){
+}
+</script>
+  
+   <link rel="stylesheet" type="text/css" href="mystyles.css" />
+   <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16" />
+   <title>Recycling Information Otago - Contact us</title>  
+  </head>
+  
+     
+   <body> 
+   
+   <header id="head">    
+	 <nav class="navheader">	
+	  <a class="a1" href="Page1.html" title="Homepage - Recycling Information Otago ">Home</a>
+	  	 <a class="a1" href="Page2.html" title=" About Recycling Information Otago ">About us</a> 
+	  	 	<a class="a1" href="Page3.html" title=" Learn about recycling in your area ">Recycling</a> 
+	  	 <a class="a1" href="Page4.html" title=" Learn about electronic waste disposal in your area ">E-Waste</a> 
+	  <a class="active" href="#active">Contact us</a>	
+	 </nav>  
+   </header>       
+  	 <div class="page">   
+  	    <div class="contactusimage" title=" Minimize "></div>     	
+  		  <div class="grid">     
+    		 	  	   		<div class="content"><div id="start"><h1>Talk to us</h1>
+							
+							<p>Want more information about Recycling and E-waste, feel free to contact us</p>
+																					  
+																					  <table>	
+																					  <br />						
+								 						  	 					 	  <tr><td class="td1">Email: </td><td class="td2"> info@otago.govt.nz </td></tr>
+								 													  <tr><td class="td1">Phone: </td><td class="td2"> 03 477 3014 </td></tr>
+																					  <tr><td class="td1">Fax: </td><td class="td2"> 03 471 6870 </td></tr>
+																					  <tr><td class="td1">Freephone: </td><td class="td2"> 0800 123 456 </td></tr>
+																					  <tr><td class="td1">Address: </td><td class="td2">60 Harbour Tce, Dunedin</td></tr>
+																					  </table>
+
+																					  <h4>Leave a Reply</h4>
+																					  <p><input name="author" id="author" value="" size="22" tabindex="1" aria-required="true" type="text">
+																					  <label for="author"><small>Name (required)</small></label></p>
+
+																					  <p><input name="email" id="email" value="" size="22" tabindex="2" aria-required="true" type="text">
+																					  <label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+																					  <p><input name="url" id="url" value="" size="22" tabindex="3" type="text">
+																					  <label for="url"><small>Website</small></label></p>
+																					  
+																					  <p><textarea name="comment" id="comment" cols="75" rows="9" tabindex="4"></textarea></p>
+	
+																					  <p>
+																					  <input name="submit" class="button"  onclick="document.location.reload(true)" id="submit" tabindex="5" value="Submit Comment" type="submit"> <a style="display:none;">Cancel Reply</a>	<input name="comment_post_ID" value="6336" id="comment_post_ID" type="hidden">
+																					  <input name="comment_parent" id="comment_parent" value="0" type="hidden">
+																					  </p>	
+	
+																					  
+	
+							
+				 </div>
+			  </div>
+		   <div class="flip" title=" Back to top "><div class="arrow"><img src="arrow_sans_down_32.png" width="32px" height="32px" border="0"></div></div> 
+  	    </div>			
+     <footer id="foot">	
+	 	   <nav id="navfooter">
+	  	   		<a class="a3" href="Page1.html">Home</a> |
+	  			   <a class="a3" href="Page2.html">About us</a> |
+	  			   	  <a class="a3" href="Page3.html">Recycling</a> |
+	  			   <a class="a3" href="Page4.html">E-Waste</a> |
+	  			<a class="a3" href="Page5.html">Contact us</a>					
+	 	   </nav>		     
+     </footer>	  
+     </div>
+	 <div class="copyright">Copyright (c) 2012-2015 Adam Charlton<br /> All Rights Reserved. - Legal disclaimer/notice</div>
+  </body>
+    
+</html>

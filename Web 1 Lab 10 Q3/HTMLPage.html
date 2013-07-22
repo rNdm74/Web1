@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+		
+		<script type="text/javascript">		
+		function allowDrop(cookie)
+		{
+		cookie.preventDefault(); <!-- Prevents default page settings to stop drag event from working -->
+		}
+		
+		function drag(cookie) <!-- Allows cookies to be dragged -->
+		{
+		cookie.dataTransfer.setData("Text",cookie.target.id);
+		}
+		
+		function drop(cookie) <!-- Allows cookies to be dropped on cookie monster -->
+		{
+		cookie.preventDefault();		
+		var data=document.getElementById(cookie.dataTransfer.getData("Text"));	
+		data.parentNode.removeChild(data);	
+		<!--cookie.target.appendChild(document.getElementById(data));-->
+		}
+				
+		<!--function gobble(id) <!-- Removes images that are dropped on cookie monster --> 
+		<!--{
+        <!--var cookie = document.getElementById(id);
+        <!--cookie.style.display = 'none';
+		<!--}		
+		</script>		
+    </head>
+	
+    <body>
+	
+	<div id="cookie1" draggable="true" ondragstart="drag(event)" <!--ondragend="gobble('cookie1')-->"></div>
+	<!-- draggable="true" : makes id="cookie1" draggable 
+		 ondragstart="drag(event)" : calls function drag and passes it event data being dragged
+	     ondragend="visible('cookie1')" : takes id being dragged at end of drag image is dropped and then not displayed -->
+		 
+	<div id="cookie2" draggable="true" ondragstart="drag(event)" <!--ondragend="gobble('cookie2')-->"></div>
+	<div id="cookie3" draggable="true" ondragstart="drag(event)" <!--ondragend="gobble('cookie3')-->"></div>
+	<div id="cookie4" draggable="true" ondragstart="drag(event)" <!--ondragend="gobble('cookie4')-->"></div>
+	
+	<img id="cookiemonster" src="cookie_monster.png" ondrop="drop(event)" ondragover="allowDrop(event)" width="400" height="400"/>
+	
+    </body>
+</html>

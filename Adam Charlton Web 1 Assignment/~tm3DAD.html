@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>  
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
+  
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".active").hover(function(){
+    $(".ewasteimage").slideDown("normal");
+	return false;     
+  });
+});
+
+$(document).ready(function(){
+$(".ewasteimage").click(function(){
+    $(".ewasteimage").slideUp("normal");
+	return false;     
+  });
+});
+
+$(document).ready(function(){
+$(".flip").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+  });    
+});
+</script>
+     
+   <link rel="stylesheet" type="text/css" href="mystyles.css" />
+   <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16" />
+   <title>Recycling Information Otago - Ewaste</title>  
+  </head>
+  
+      
+   <body>
+   
+   <header id="head">    
+	 <nav class="navheader">	
+	  <a class="a1" href="Page1.html" title="Homepage - Recycling Information Otago ">Home</a>
+	  	 <a class="a1" href="Page2.html" title=" About Recycling Information Otago ">About us</a> 
+	  	 	<a class="a1" href="Page3.html" title=" Learn about recycling in your area ">Recycling</a> 
+	  	 <a class="active" href="#active">E-Waste</a> 
+	  <a class="a1" href="Page5.html" title=" Get in touch ">Contact us</a>	
+	 </nav>  
+   </header>
+       
+  		<div class="page">
+  			 	  <div class="ewasteimage" title=" Minimize "></div>     	
+  			 	  	   <div class="grid">     
+    		 	  	   		<div class="content"><div id="start"><h1>Be smart</h1>
+								 				    
+													Ewaste is the fastest growing waste stream in developed countries. 
+								 				    It is made up of electronic equipment that has come to the end of its useful life and is destined for disposal. 
+													It includes for example:<br /><br />Batteries, televisions, computers, cell phones, photocopiers, stereos, DVD or VCR players and cameras													
+													
+<p>Computer waste is dismantled by Cargill Enterprises, 199 Hillside Rd, South Dunedin. Computer waste can also be dropped off there during business hours. For more information about their ewaste recycling process, contact Derek King, General Manager of Cargill Enterprises on <a href="mailto:derek@cargillenterprises.co.nz">derek@cargillenterprises.co.nz</a> </p>
+
+<p>TV waste is sent to RCN in Christchurch for recycling. Visit www.rcn.co.nz/ewaste in the <strong>related information section</strong> below, for more information.</p> 
+
+													<br /><br /> RCN e-Cycle locates your drop off depot<a class="l3" href="http://www.e-cycle.co.nz/centres/dunedin" title=" Go to homepage - RCN eCycle | Recycling your electronics"><img src="ecycle.jpg" alt="" border="0"></a></p>
+													(Google.com)<br /><br />
+													
+													</div>
+													
+			  </div>
+		   <div class="flip" title=" Back to top "><div class="arrow"><img src="arrow_sans_down_32.png" width="32px" height="32px" border="0"></div></div>	 
+  	    </div>				
+     <footer id="foot">	
+	 	   <nav id="navfooter">
+	  	   		<a class="a3" href="Page1.html">Home</a> |
+	  			   <a class="a3" href="Page2.html">About us</a> |
+	  			   	  <a class="a3" href="Page3.html">Recycling</a> |
+	  			   <a class="a3" href="Page4.html">E-Waste</a> |
+	  			<a class="a3" href="Page5.html">Contact us</a>	
+	 	    </nav>   
+         </footer>
+	  </div>
+   <div class="copyright">Copyright (c) 2012-2015 Adam Charlton<br /> All Rights Reserved. - Legal disclaimer/notice</div>
+</body>
+    
+</html>

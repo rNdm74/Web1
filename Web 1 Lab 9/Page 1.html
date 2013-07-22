@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+  
+  <script language="javascript">
+  
+  
+  var x=confirm("Press OK to stay on this page  Cancel to google.com")
+  if (!x)  	 
+	 window.location="http://www.google.com"	 
+	 else	 
+	 enterName()
+	 
+  var age
+  var name
+  
+  function enterAge()
+  {
+   age=window.prompt(name+" please enter your age")
+   output()
+  }
+  
+  function enterName()
+  {
+   name=window.prompt("Please enter your name")
+   enterAge()
+  }
+  
+  function output()
+  {
+  document.write("Hello "+name+" you are "+age+" years old.")
+  }
+  
+  </script>
+  
+  </head>
+  
+  
+  <body>
+    
+  <a href="#" onMouseOver="window.location='http://www.google.com'">Hover over me to goto google.com</a>
+  
+  </body>
+</html>

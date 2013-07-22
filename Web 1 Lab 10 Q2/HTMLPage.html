@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+        <meta charset="utf-8" />
+        <title></title>
+		
+		<script type="text/javascript">		
+		function allowDrop(ev)
+		{
+		ev.preventDefault();
+		}
+		
+		function drag(ev)
+		{
+		ev.dataTransfer.setData("Text",ev.target.id);
+		}
+		
+		function drop(ev)
+		{
+		ev.preventDefault();
+		var data=ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
+		}
+		</script>
+		
+    </head>
+    <body>
+    
+	<div id="div1" draggable="true" ondragstart="drag(event)"></div>
+	
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	   
+    </body>
+</html>

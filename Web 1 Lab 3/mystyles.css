@@ -1,0 +1,118 @@
+#para1
+{
+font-size:20px;
+text-align:center;
+color:red;
+}
+
+.center
+{
+text-align:center;
+color:black;
+}
+
+p.main
+{
+margin-left:110px;"
+color:blue;
+}
+
+p
+{
+font-size:20px;
+color:green;
+}
+
+a
+{
+font-family:"Tahoma", Geneva, sans-serif;
+font-size:20px;
+}
+
+.style
+{
+background-image:url('28.jpg');
+font-family:"Tahoma", Geneva, sans-serif;
+}
+
+table.t1
+{
+border-collapse:collapse;
+border: 2px solid green;
+align="center";
+}
+
+th.list1
+{
+border-collapse:collapse;
+border: 2px solid green;
+height:50px;
+width:200px;
+background-color:lightgreen;
+color:white;
+}
+
+th.list2
+{
+border-collapse:collapse;
+border: 2px solid green;
+height:50px;
+width:200px;
+background-color:lightgreen;
+color:white;
+}
+
+td
+{
+text-align:center;
+height:50px;
+width:60px;
+}
+
+td.a
+{
+border: 1px solid green;
+}
+td.b
+{
+border: 1px solid green;
+background-image:url('AVATAR.jpg');
+}
+td.c
+{
+border: 1px solid green;
+}
+td.d
+{
+border: 1px solid green;
+}
+td.e
+{
+border: 1px solid green;
+}
+td.f
+{
+border: 1px solid green;
+}
+
+table.t2
+{
+border: 0px;
+}
+
+ol.a
+{
+list-style-type: upper-roman;
+}
+
+ul.a
+{
+list-style-type: square;
+}
+
+table.list
+{
+border-collapse:collapse;
+border: 1px solid green;
+align="center";
+}
